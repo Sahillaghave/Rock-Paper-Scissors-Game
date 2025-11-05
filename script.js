@@ -62,7 +62,7 @@ function displayWin(winner, p1, p2) {
   } else if (winner === "p2") {
     if (gameMode === "computer") loseSound.play();
     else winSound.play();
-    resultText.innerHTML = `💻 ${player2Name} Wins! (${p2} beats ${p1})`;
+    resultText.innerHTML = `${player2Name} Wins! (${p2} beats ${p1})`;
     p2Score++;
   } else {
     tieSound.play();
